@@ -1,0 +1,131 @@
+
+/*
+STYLING DONE BY CHATGPT
+*/
+
+
+
+/* Dark hacking-themed styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace; /* Terminal-style font */
+}
+
+/* Body styling */
+body {
+    background-color: #0d0d0d; /* Very dark background */
+    color: #33ff33; /* Neon green for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+#user-input-box {
+    background-color: #121212;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.2); /* Green glow effect */
+    text-align: center;
+    border: 1px solid #1a1a1a;
+}
+
+/* Header styling */
+#user-input-box h1 {
+    font-size: 2.4rem;
+    color: #33ff33;
+    background: linear-gradient(90deg, #33ff33, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.8); /* Strong neon glow */
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: glitch 1.5s infinite; /* Glitch effect */
+}
+
+/* Glitch animation */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 3px rgba(0, 255, 0, 0.8); }
+    20% { text-shadow: -2px -2px 3px rgba(0, 255, 0, 0.8); }
+    40% { text-shadow: 1px 1px 2px rgba(0, 255, 0, 0.8); }
+    60% { text-shadow: -1px -1px 2px rgba(0, 255, 0, 0.8); }
+    80% { text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.8); }
+    100% { text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.8); }
+}
+
+/* Instructional text */
+#user-input-box p {
+    color: #1aff1a;
+    margin: 15px 0;
+}
+
+/* Input field */
+#user-input-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+    background-color: #0b0b0b;
+    color: #33ff33;
+    font-size: 1rem;
+}
+
+/* Instruction message */
+#LengthMsg {
+    font-size: 0.9rem;
+    color: #1aff1a;
+    margin-top: 5px;
+}
+
+/* Search results container */
+#search-results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    border: 1px solid #333;
+    color: #1aff1a;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Ensures items stay centered */
+    justify-content: center; /* Centers content within the container */
+    width: 100%;
+}
+
+/* Link styling for selected shows */
+#search-results a {
+    display: block;
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0a0a0a;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#search-results a:hover {
+    background-color: #33ff33;
+    color: #0d0d0d;
+    transform: scale(1.05);
+}
+
+/* Input focus effect */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #33ff33;
+    box-shadow: 0px 0px 8px rgba(51, 255, 51, 0.4);
+}
+/* Remove bullets or dots from list-style items in search results */
+#search-results ul {
+    list-style-type: none;
+    padding-left: 0; /* Removes any left padding for alignment */
+}
